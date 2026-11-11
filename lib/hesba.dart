@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_screenutil_plus/flutter_screenutil_plus.dart';
+import 'package:hesba/Core/routes/app_router.dart';
+import 'package:hesba/Core/themes/app_theme.dart';
 import 'package:hesba/generated/l10n.dart';
 
 class Hesba extends StatelessWidget {
@@ -13,7 +15,7 @@ class Hesba extends StatelessWidget {
       minTextAdapt: true,
       splitScreenMode: true,
       builder: (context, child) {
-        return MaterialApp(
+        return MaterialApp.router(
           debugShowCheckedModeBanner: false,
           localizationsDelegates: [
             S.delegate,
@@ -22,14 +24,12 @@ class Hesba extends StatelessWidget {
             GlobalCupertinoLocalizations.delegate,
           ],
           supportedLocales: S.delegate.supportedLocales,
-          locale: Locale('ar'),
+          locale: Locale('ar', 'Eg'),
           title: 'Hesba',
-          theme: ThemeData(fontFamily: 'IBMPlexSansArabic'),
-          home: Scaffold(
-            body: SafeArea(
-              child: Text(' حسبه', style: TextStyle(fontSize: 35)),
-            ),
-          ),
+          themeMode: ThemeMode.system,
+          theme: AppTheme.light,
+          darkTheme: AppTheme.dark,
+          routerConfig: AppRouter.router,
         );
       },
     );
