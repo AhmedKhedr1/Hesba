@@ -3,6 +3,7 @@ import 'package:flutter_screenutil_plus/flutter_screenutil_plus.dart';
 import 'package:hesba/Core/themes/app_colors.dart';
 import 'package:hesba/Core/themes/app_fonts.dart';
 import 'package:hesba/Core/themes/app_reduis.dart';
+import 'package:hesba/Core/themes/app_text_styles.dart';
 
 class AppTheme {
   AppTheme._();
@@ -90,7 +91,11 @@ class AppTheme {
       ),
 
       textButtonTheme: TextButtonThemeData(
-        style: TextButton.styleFrom(foregroundColor: appColors.primary),
+        style: TextButton.styleFrom(
+          backgroundColor: appColors.primary,
+          foregroundColor: appColors.buttonText,
+          textStyle: AppTextStyles.link,
+        ),
       ),
       dividerTheme: DividerThemeData(
         color: appColors.border,
