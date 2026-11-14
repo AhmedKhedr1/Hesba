@@ -163,6 +163,7 @@ class AppFontWeight {
   static const FontWeight medium = FontWeight.w500;
   static const FontWeight semiBold = FontWeight.w600;
   static const FontWeight bold = FontWeight.w700;
+  
 }
 
 /// أحجام الأزرار
@@ -247,24 +248,3 @@ class AppLoaderSize {
   static double get large => 48.w;
   static const double strokeWidth = 2.5;
 }
-
-// import 'package:flutter_screenutil_plus/flutter_screenutil_plus.dart';
-
-// class AppRadius {
-//   AppRadius._();
-//   static double get field => 14.r;
-//   static double get button => 16.r;
-//   static double get card => 16.r;
-// }
-
-// class AppBorderWidth {
-//   AppBorderWidth._();
-
-//   static const double normal = 1;
-//   static const double focused = 1.5;
-// }
-
-// class AppSizes {
-//   AppSizes._();
-//   static double get buttonHeight => 56.h;
-// }

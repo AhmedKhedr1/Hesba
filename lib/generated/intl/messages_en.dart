@@ -21,5 +21,64 @@ class MessageLookup extends MessageLookupByLibrary {
   String get localeName => 'en';
 
   final messages = _notInlinedMessages(_notInlinedMessages);
-  static Map<String, Function> _notInlinedMessages(_) => <String, Function>{};
+  static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+    "Or": MessageLookupByLibrary.simpleMessage("OR"),
+    "agreeToTerms": MessageLookupByLibrary.simpleMessage(
+      "I agree to the Privacy Policy and Terms",
+    ),
+    "alreadyHaveAccount": MessageLookupByLibrary.simpleMessage(
+      "Already have an account?",
+    ),
+    "confirmPassword": MessageLookupByLibrary.simpleMessage("Confirm Password"),
+    "confirmPasswordRequired": MessageLookupByLibrary.simpleMessage(
+      "Please confirm your password",
+    ),
+    "continueWithGoogle": MessageLookupByLibrary.simpleMessage(
+      "Continue with Google",
+    ),
+    "createAccount": MessageLookupByLibrary.simpleMessage("Create Account"),
+    "createNewAccount": MessageLookupByLibrary.simpleMessage(
+      "Create New Account",
+    ),
+    "dontHaveAccount": MessageLookupByLibrary.simpleMessage(
+      "Don\'t have an account ?",
+    ),
+    "email": MessageLookupByLibrary.simpleMessage("Email"),
+    "emailInvalid": MessageLookupByLibrary.simpleMessage(
+      "Invalid email address",
+    ),
+    "emailRequired": MessageLookupByLibrary.simpleMessage(
+      "Please enter your email",
+    ),
+    "enterEmail": MessageLookupByLibrary.simpleMessage("Enter your email"),
+    "forgotPassword": MessageLookupByLibrary.simpleMessage("Forgot Password?"),
+    "login": MessageLookupByLibrary.simpleMessage("Log In"),
+    "loginSubtitle": MessageLookupByLibrary.simpleMessage(
+      "Sign in to keep track of your expenses",
+    ),
+    "nameInvalid": MessageLookupByLibrary.simpleMessage(
+      "Name must contain letters only",
+    ),
+    "nameRequired": MessageLookupByLibrary.simpleMessage(
+      "Please enter your name",
+    ),
+    "nameTooShort": MessageLookupByLibrary.simpleMessage("Name is too short"),
+    "password": MessageLookupByLibrary.simpleMessage("Password"),
+    "passwordInvalid": MessageLookupByLibrary.simpleMessage(
+      "Use an uppercase letter (A), a lowercase letter (a), and a special character (@ or #).",
+    ),
+    "passwordRequired": MessageLookupByLibrary.simpleMessage(
+      "Please enter your password",
+    ),
+    "passwordTooShort": MessageLookupByLibrary.simpleMessage(
+      "Password must be at least 8 characters",
+    ),
+    "passwordsDoNotMatch": MessageLookupByLibrary.simpleMessage(
+      "Passwords do not match",
+    ),
+    "signupSubtitle": MessageLookupByLibrary.simpleMessage(
+      "Start tracking your expenses in just one minute",
+    ),
+    "welcomeBack": MessageLookupByLibrary.simpleMessage("Welcome Back"),
+  };
 }

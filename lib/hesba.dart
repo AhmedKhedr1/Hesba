@@ -29,6 +29,7 @@ class Hesba extends ConsumerWidget {
           supportedLocales: S.delegate.supportedLocales,
           locale: Locale('ar', 'Eg'),
           title: 'Hesba',
+          //themeMode: ThemeMode.light,
           themeMode: themeMode,
           theme: AppTheme.light,
           darkTheme: AppTheme.dark,
