@@ -1,8 +1,8 @@
 // ignore_for_file: must_be_immutable
 
 import 'package:flutter/material.dart';
+import 'package:hesba/Core/extensions/app_colors_extension.dart';
 import 'package:hesba/Core/extensions/localization_extension.dart';
-import 'package:hesba/Core/themes/app_colors.dart';
 import 'package:hesba/Core/themes/app_text_styles.dart';
 
 class ForgetPassword extends StatelessWidget {

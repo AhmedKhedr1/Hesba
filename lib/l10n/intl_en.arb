@@ -24,5 +24,14 @@
 "confirmPasswordRequired": "Please confirm your password",
 "passwordsDoNotMatch": "Passwords do not match",
 "nameInvalid": "Name must contain letters only",
-"passwordInvalid": "Use an uppercase letter (A), a lowercase letter (a), and a special character (@ or #)."
+"passwordInvalid": "Use an uppercase letter (A), a lowercase letter (a), and a special character (@ or #).",
+"startTrackingExpenses": "Start tracking your expenses in just one minute",
+  "fullName": "Full Name",
+  "enterFullName": "Enter your full name",
+  "iAgreeTo": "I agree to the",
+"termsAndConditions": "Terms",
+"and": "and",
+"privacyPolicy": "Privacy Policy",
+"mustAcceptTerms": "You must accept the terms and privacy policy to continue"
+
 }

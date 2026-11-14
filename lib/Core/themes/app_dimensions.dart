@@ -46,7 +46,7 @@ class AppPadding {
 
   // الحقول والأزرار
   static EdgeInsets get field =>
-      EdgeInsets.symmetric(horizontal: 16.w, vertical: 16.h);
+      EdgeInsets.symmetric(horizontal: 12.w, vertical: 12.h);
   static EdgeInsets get button =>
       EdgeInsets.symmetric(horizontal: 24.w, vertical: 14.h);
 
@@ -148,7 +148,7 @@ class AppFontSize {
   static double get display => 48.sp; // رقم المبلغ في شاشة الإضافة
 
   // محددة
-  static double get button => 16.sp;
+  static double get button => 18.sp;
   static double get buttonSecondary => 15.sp;
   static double get navLabel => 12.sp;
   static double get input => 15.sp;
@@ -163,7 +163,6 @@ class AppFontWeight {
   static const FontWeight medium = FontWeight.w500;
   static const FontWeight semiBold = FontWeight.w600;
   static const FontWeight bold = FontWeight.w700;
-  
 }
 
 /// أحجام الأزرار

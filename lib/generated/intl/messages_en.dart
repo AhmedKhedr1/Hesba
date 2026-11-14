@@ -29,6 +29,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "alreadyHaveAccount": MessageLookupByLibrary.simpleMessage(
       "Already have an account?",
     ),
+    "and": MessageLookupByLibrary.simpleMessage("and"),
     "confirmPassword": MessageLookupByLibrary.simpleMessage("Confirm Password"),
     "confirmPasswordRequired": MessageLookupByLibrary.simpleMessage(
       "Please confirm your password",
@@ -51,10 +52,18 @@ class MessageLookup extends MessageLookupByLibrary {
       "Please enter your email",
     ),
     "enterEmail": MessageLookupByLibrary.simpleMessage("Enter your email"),
+    "enterFullName": MessageLookupByLibrary.simpleMessage(
+      "Enter your full name",
+    ),
     "forgotPassword": MessageLookupByLibrary.simpleMessage("Forgot Password?"),
+    "fullName": MessageLookupByLibrary.simpleMessage("Full Name"),
+    "iAgreeTo": MessageLookupByLibrary.simpleMessage("I agree to the"),
     "login": MessageLookupByLibrary.simpleMessage("Log In"),
     "loginSubtitle": MessageLookupByLibrary.simpleMessage(
       "Sign in to keep track of your expenses",
+    ),
+    "mustAcceptTerms": MessageLookupByLibrary.simpleMessage(
+      "You must accept the terms and privacy policy to continue",
     ),
     "nameInvalid": MessageLookupByLibrary.simpleMessage(
       "Name must contain letters only",
@@ -76,9 +85,14 @@ class MessageLookup extends MessageLookupByLibrary {
     "passwordsDoNotMatch": MessageLookupByLibrary.simpleMessage(
       "Passwords do not match",
     ),
+    "privacyPolicy": MessageLookupByLibrary.simpleMessage("Privacy Policy"),
     "signupSubtitle": MessageLookupByLibrary.simpleMessage(
       "Start tracking your expenses in just one minute",
     ),
+    "startTrackingExpenses": MessageLookupByLibrary.simpleMessage(
+      "Start tracking your expenses in just one minute",
+    ),
+    "termsAndConditions": MessageLookupByLibrary.simpleMessage("Terms"),
     "welcomeBack": MessageLookupByLibrary.simpleMessage("Welcome Back"),
   };
 }

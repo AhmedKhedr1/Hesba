@@ -24,4 +24,13 @@
 "confirmPasswordRequired": "من فضلك أكد كلمة المرور",
 "passwordsDoNotMatch": "كلمتا المرور غير متطابقتين",
 "nameInvalid": "يجب أن يحتوي الاسم على حروف فقط",
-"passwordInvalid": "استخدم حرفًا كبيرًا (A)، وحرفًا صغيرًا (a)، ورمزًا خاصًا (@ أو #)."}
+"passwordInvalid": "استخدم حرفًا كبيرًا (A)، وحرفًا صغيرًا (a)، ورمزًا خاصًا (@ أو #).",
+"startTrackingExpenses": "ابدأ بتسجيل مصاريفك في دقيقة واحدة",
+  "fullName": "الاسم الكامل",
+  "enterFullName": "أدخل اسمك الكامل",
+  "iAgreeTo": "أوافق على",
+"termsAndConditions": "الشروط والأحكام",
+"and": "و",
+"privacyPolicy": "سياسة الخصوصية",
+"mustAcceptTerms": "يجب الموافقة على الشروط وسياسة الخصوصية للمتابعة"
+}

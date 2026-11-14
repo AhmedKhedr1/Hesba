@@ -1,13 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:hesba/Core/constants/app_assets.dart';
 import 'package:hesba/Core/extensions/localization_extension.dart';
 import 'package:hesba/Core/extensions/theme_extension.dart';
+import 'package:hesba/Core/routes/app_routes.dart';
 import 'package:hesba/Core/themes/app_dimensions.dart';
-import 'package:hesba/features/Auth/presentation/views/widgets/auth_field_label.dart';
 import 'package:hesba/features/Auth/presentation/views/widgets/auth_header.dart';
 import 'package:hesba/features/Auth/presentation/views/widgets/auth_text_button.dart';
-import 'package:hesba/features/Auth/presentation/views/widgets/custom_text_field.dart';
-import 'package:hesba/features/Auth/presentation/views/widgets/donot_have_account.dart';
+import 'package:hesba/features/Auth/presentation/views/widgets/LabeledTextFormField.dart';
+import 'package:hesba/features/Auth/presentation/views/widgets/have_and_not_have_account.dart';
 import 'package:hesba/features/Auth/presentation/views/widgets/forget_password.dart';
 import 'package:hesba/features/Auth/presentation/views/widgets/google_signup_button.dart';
 import 'package:hesba/features/Auth/presentation/views/widgets/or_divider.dart';
@@ -47,12 +48,11 @@ class _LoginViewBodyState extends State<LoginViewBody> {
                 AppGap.vXxl,
                 AuthHeader(
                   title: context.l10n.welcomeBack,
-                  subTitle:context.l10n.loginSubtitle,
+                  subTitle: context.l10n.loginSubtitle,
                 ),
                 AppGap.vXxl,
-                AuthFieldLabel(title: context.l10n.email),
-                AppGap.vSm,
-                CustomTextFormField(
+                LabeledTextFormField(
+                  labelText: context.l10n.email,
                   hintText: context.l10n.enterEmail,
                   hintIcon: context.brightness == Brightness.light
                       ? AppAssets.emailLight
@@ -64,9 +64,9 @@ class _LoginViewBodyState extends State<LoginViewBody> {
                   validator: (value) => Validators.email(value, context.l10n),
                 ),
                 AppGap.vLg,
-                AuthFieldLabel(title: context.l10n.password),
-                AppGap.vSm,
-                CustomTextFormField(
+
+                LabeledTextFormField(
+                  labelText: context.l10n.email,
                   hintText: '••••••••',
                   hintIcon: context.brightness == Brightness.light
                       ? AppAssets.passwordlight
@@ -86,14 +86,18 @@ class _LoginViewBodyState extends State<LoginViewBody> {
                   onPressed: () {
                     _submit();
                   },
-                  title:context.l10n.login,
+                  title: context.l10n.login,
                 ),
                 AppGap.vXl,
                 OrDivider(),
                 AppGap.vXl,
                 GoogleSignupButton(onPressed: () {}),
                 AppGap.vXxl,
-                DoNotHaveAccount(),
+                HaveAndNotHaveAccount(
+                  message: context.l10n.dontHaveAccount,
+                  actionText: context.l10n.createAccount,
+                  onTap: () => GoRouter.of(context).push(AppRoutes.signup),
+                ),
               ],
             ),
           ),

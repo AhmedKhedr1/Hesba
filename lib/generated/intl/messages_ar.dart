@@ -29,6 +29,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "alreadyHaveAccount": MessageLookupByLibrary.simpleMessage(
       "لديك حساب بالفعل ؟",
     ),
+    "and": MessageLookupByLibrary.simpleMessage("و"),
     "confirmPassword": MessageLookupByLibrary.simpleMessage(
       "تأكيد كلمة المرور",
     ),
@@ -49,12 +50,18 @@ class MessageLookup extends MessageLookupByLibrary {
       "من فضلك أدخل البريد الإلكتروني",
     ),
     "enterEmail": MessageLookupByLibrary.simpleMessage("أدخل بريدك الإلكتروني"),
+    "enterFullName": MessageLookupByLibrary.simpleMessage("أدخل اسمك الكامل"),
     "forgotPassword": MessageLookupByLibrary.simpleMessage(
       "نسيت كلمة المرور ؟",
     ),
+    "fullName": MessageLookupByLibrary.simpleMessage("الاسم الكامل"),
+    "iAgreeTo": MessageLookupByLibrary.simpleMessage("أوافق على"),
     "login": MessageLookupByLibrary.simpleMessage("تسجيل الدخول"),
     "loginSubtitle": MessageLookupByLibrary.simpleMessage(
       "سجّل دخولك لمتابعة مصاريفك",
+    ),
+    "mustAcceptTerms": MessageLookupByLibrary.simpleMessage(
+      "يجب الموافقة على الشروط وسياسة الخصوصية للمتابعة",
     ),
     "nameInvalid": MessageLookupByLibrary.simpleMessage(
       "يجب أن يحتوي الاسم على حروف فقط",
@@ -74,8 +81,15 @@ class MessageLookup extends MessageLookupByLibrary {
     "passwordsDoNotMatch": MessageLookupByLibrary.simpleMessage(
       "كلمتا المرور غير متطابقتين",
     ),
+    "privacyPolicy": MessageLookupByLibrary.simpleMessage("سياسة الخصوصية"),
     "signupSubtitle": MessageLookupByLibrary.simpleMessage(
       "وابدأ بتسجيل مصاريفك في دقيقة",
+    ),
+    "startTrackingExpenses": MessageLookupByLibrary.simpleMessage(
+      "ابدأ بتسجيل مصاريفك في دقيقة واحدة",
+    ),
+    "termsAndConditions": MessageLookupByLibrary.simpleMessage(
+      "الشروط والأحكام",
     ),
     "welcomeBack": MessageLookupByLibrary.simpleMessage("أهلاً بعودتك"),
   };

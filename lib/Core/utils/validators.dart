@@ -32,6 +32,7 @@ class Validators {
   static String? signUpPassword(String? value, S l10n) {
     if (value == null || value.isEmpty) return l10n.passwordRequired;
     if (value.length < minPasswordLength) return l10n.passwordTooShort;
+    if (!AppRegex.isPasswordValid(value)) return l10n.passwordInvalid;
     return null;
   }
 

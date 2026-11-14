@@ -294,6 +294,71 @@ class S {
       args: [],
     );
   }
+
+  /// `Start tracking your expenses in just one minute`
+  String get startTrackingExpenses {
+    return Intl.message(
+      'Start tracking your expenses in just one minute',
+      name: 'startTrackingExpenses',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Full Name`
+  String get fullName {
+    return Intl.message('Full Name', name: 'fullName', desc: '', args: []);
+  }
+
+  /// `Enter your full name`
+  String get enterFullName {
+    return Intl.message(
+      'Enter your full name',
+      name: 'enterFullName',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `I agree to the`
+  String get iAgreeTo {
+    return Intl.message('I agree to the', name: 'iAgreeTo', desc: '', args: []);
+  }
+
+  /// `Terms`
+  String get termsAndConditions {
+    return Intl.message(
+      'Terms',
+      name: 'termsAndConditions',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `and`
+  String get and {
+    return Intl.message('and', name: 'and', desc: '', args: []);
+  }
+
+  /// `Privacy Policy`
+  String get privacyPolicy {
+    return Intl.message(
+      'Privacy Policy',
+      name: 'privacyPolicy',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `You must accept the terms and privacy policy to continue`
+  String get mustAcceptTerms {
+    return Intl.message(
+      'You must accept the terms and privacy policy to continue',
+      name: 'mustAcceptTerms',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

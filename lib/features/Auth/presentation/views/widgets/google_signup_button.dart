@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:hesba/Core/constants/app_assets.dart';
+import 'package:hesba/Core/extensions/app_colors_extension.dart';
 import 'package:hesba/Core/extensions/localization_extension.dart';
-import 'package:hesba/Core/themes/app_colors.dart';
 import 'package:hesba/Core/themes/app_dimensions.dart';
 import 'package:hesba/Core/themes/app_text_styles.dart';
 
