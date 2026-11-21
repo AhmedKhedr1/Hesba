@@ -26,7 +26,7 @@ class LabeledTextFormField extends StatefulWidget {
   final TextInputType keyboardType;
   void Function(String?)? onSaved;
   String? Function(String?)? validator;
- final TextEditingController? textEditingController;
+  final TextEditingController? textEditingController;
   @override
   State<LabeledTextFormField> createState() => _LabeledTextFormFieldState();
 }
@@ -41,11 +41,13 @@ class _LabeledTextFormFieldState extends State<LabeledTextFormField> {
         AuthFieldLabel(title: widget.labelText),
         AppGap.vSm,
         TextFormField(
+          textDirection: TextDirection.ltr,
+          textAlign: TextAlign.left,
           validator: widget.validator,
           obscureText: widget.isPassword && _isObscured,
           keyboardType: widget.keyboardType,
           onSaved: widget.onSaved,
-          controller:widget.textEditingController,
+          controller: widget.textEditingController,
           maxLines: 1,
           decoration: InputDecoration(
             constraints: BoxConstraints(minHeight: AppInputSize.heightSmall),
@@ -62,7 +64,7 @@ class _LabeledTextFormFieldState extends State<LabeledTextFormField> {
                           : Icons.visibility_outlined,
                     ),
                   )
-                : SizedBox.shrink(),
+                : null,
             hint: Row(
               children: [
                 SvgPicture.asset(widget.hintIcon),

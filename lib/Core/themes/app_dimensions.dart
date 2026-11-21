@@ -46,7 +46,7 @@ class AppPadding {
 
   // الحقول والأزرار
   static EdgeInsets get field =>
-      EdgeInsets.symmetric(horizontal: 12.w, vertical: 12.h);
+      EdgeInsets.symmetric(horizontal: 10.w, vertical: 12.h);
   static EdgeInsets get button =>
       EdgeInsets.symmetric(horizontal: 24.w, vertical: 14.h);
 

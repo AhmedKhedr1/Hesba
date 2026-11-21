@@ -121,7 +121,14 @@ class _SignUpViewBodyState extends State<SignUpViewBody> {
                     ),
                   ),
                   AppGap.vSm,
-                  TermsCheckbox(onTermsTap: () {}, onPrivacyTap: () {}),
+                  TermsCheckbox(
+                    onTermsTap: () {
+                      GoRouter.of(context).push(AppRoutes.termsAndConditions);
+                    },
+                    onPrivacyTap: () {
+                      GoRouter.of(context).push(AppRoutes.privacyPolicyView);
+                    },
+                  ),
                   AppGap.vSm,
                   AuthTextButton(
                     onPressed: () {

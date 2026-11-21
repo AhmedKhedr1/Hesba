@@ -59,7 +59,6 @@ class _LoginViewBodyState extends State<LoginViewBody> {
                       : AppAssets.emailDark,
                   isPassword: false,
                   keyboardType: TextInputType.emailAddress,
-
                   onSaved: (value) => email = value!.trim(),
                   validator: (value) => Validators.email(value, context.l10n),
                 ),
