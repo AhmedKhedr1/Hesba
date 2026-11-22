@@ -67,5 +67,7 @@
     "networkRequestFailed": "Network request failed. Please check your internet connection and try again.",
      "userNotFound": "No user found for this email address",
   "wrongPassword": "The password is incorrect",
-  "accountCreatedSuccessfully": "Account created successfully"
+  "accountCreatedSuccessfully": "Account created successfully",
+  "loginSuccessfully": "Logged in successfully",
+  "googleSignInCancelled": "Google Sign-In was cancelled"
 }

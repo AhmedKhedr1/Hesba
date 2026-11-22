@@ -48,4 +48,18 @@ class AuthRepoImpl implements AuthRepo {
       return left(ServerFailure(S.current.unknownError));
     }
   }
+
+  @override
+  Future<Either<Failure, UserEntity>> signInWithGoogle() async {
+    try {
+      final user = await _service.signInWithGoogle();
+      return right(UserModel.fromFirebaseUser(user));
+    } on CancelledException {
+      return left(CancelledFailure(S.current.googleSignInCancelled));
+    } on CustomException catch (e) {
+      return left(ServerFailure(e.message));
+    } catch (_) {
+      return left(ServerFailure(S.current.unknownError));
+    }
+  }
 }

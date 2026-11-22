@@ -1,9 +1,13 @@
 abstract class Failure {
-  final String message;
+  const Failure(this.message);
 
-  Failure(this.message);
+  final String message;
 }
 
 class ServerFailure extends Failure {
-  ServerFailure(super.message);
+  const ServerFailure(super.message);
+}
+
+class CancelledFailure extends Failure {
+  const CancelledFailure(super.message);
 }

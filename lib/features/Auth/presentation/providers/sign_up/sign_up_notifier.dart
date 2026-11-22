@@ -1,6 +1,6 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:hesba/features/Auth/presentation/providers/auth_dependencies.dart';
-import 'package:hesba/features/Auth/presentation/providers/sign_up_state.dart';
+import 'package:hesba/features/Auth/presentation/providers/sign_up/sign_up_state.dart';
 
 final signUpProvider =
     NotifierProvider.autoDispose<SignUpNotifier, SignUpState>(

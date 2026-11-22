@@ -8,12 +8,12 @@ import 'package:hesba/Core/helpers/snack_bar_helper.dart';
 import 'package:hesba/Core/routes/app_routes.dart';
 import 'package:hesba/Core/themes/app_dimensions.dart';
 import 'package:hesba/Core/utils/validators.dart';
-import 'package:hesba/features/Auth/presentation/providers/sign_up_notifier.dart';
-import 'package:hesba/features/Auth/presentation/providers/sign_up_state.dart';
+import 'package:hesba/features/Auth/presentation/providers/sign_up/sign_up_notifier.dart';
+import 'package:hesba/features/Auth/presentation/providers/sign_up/sign_up_state.dart';
 import 'package:hesba/features/Auth/presentation/views/widgets/LabeledTextFormField.dart';
 import 'package:hesba/features/Auth/presentation/views/widgets/auth_header.dart';
 import 'package:hesba/features/Auth/presentation/views/widgets/auth_text_button.dart';
-import 'package:hesba/features/Auth/presentation/views/widgets/google_signup_button.dart';
+import 'package:hesba/features/Auth/presentation/views/widgets/google_signin_button.dart';
 import 'package:hesba/features/Auth/presentation/views/widgets/have_and_not_have_account.dart';
 import 'package:hesba/features/Auth/presentation/views/widgets/or_divider.dart';
 import 'package:hesba/features/Auth/presentation/views/widgets/terms_checkbox.dart';
@@ -162,7 +162,7 @@ class _SignUpViewBodyState extends ConsumerState<SignUpViewBody> {
                   AppGap.vXs,
                   OrDivider(),
                   AppGap.vXs,
-                  GoogleSignupButton(onPressed: () {}),
+                  GoogleSignInButton(),
                   AppGap.vMd,
                   HaveAndNotHaveAccount(
                     message: context.l10n.alreadyHaveAccount,

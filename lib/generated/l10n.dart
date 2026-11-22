@@ -659,6 +659,26 @@ class S {
       args: [],
     );
   }
+
+  /// `Logged in successfully`
+  String get loginSuccessfully {
+    return Intl.message(
+      'Logged in successfully',
+      name: 'loginSuccessfully',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Google Sign-In was cancelled`
+  String get googleSignInCancelled {
+    return Intl.message(
+      'Google Sign-In was cancelled',
+      name: 'googleSignInCancelled',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

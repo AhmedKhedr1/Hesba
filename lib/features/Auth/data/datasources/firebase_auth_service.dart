@@ -1,6 +1,7 @@
 // ignore_for_file: empty_catches
 
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:google_sign_in/google_sign_in.dart';
 import 'package:hesba/Core/errors/exceptions.dart';
 import 'package:hesba/Core/errors/failures.dart';
 import 'package:hesba/generated/l10n.dart';
@@ -55,6 +56,27 @@ class FirebaseAuthService {
       throw CustomException(message: S.current.unknownError);
     } catch (e) {
       throw ServerFailure(e.toString());
+    }
+  }
+
+  Future<User> signInWithGoogle() async {
+    try {
+      final googleUser = await GoogleSignIn.instance.authenticate();
+
+      final googleAuth = googleUser.authentication;
+
+      final credential = GoogleAuthProvider.credential(
+        idToken: googleAuth.idToken,
+      );
+
+      return (await _auth.signInWithCredential(credential)).user!;
+    } on GoogleSignInException catch (e) {
+      if (e.code == GoogleSignInExceptionCode.canceled) {
+        throw const CancelledException();
+      }
+      throw CustomException(message: S.current.unknownError);
+    } on FirebaseAuthException catch (e) {
+      throw CustomException(message: (e.code));
     }
   }
 }

@@ -67,5 +67,7 @@
     "networkRequestFailed": "فشل الاتصال بالشبكة، تحقق من اتصالك بالإنترنت وحاول مرة أخرى",
       "userNotFound": "لا يوجد حساب مسجل بهذا البريد الإلكتروني",
   "wrongPassword": "كلمة المرور غير صحيحة",
-  "accountCreatedSuccessfully": "تم إنشاء الحساب بنجاح"
+  "accountCreatedSuccessfully": "تم إنشاء الحساب بنجاح",
+  "loginSuccessfully": "تم تسجيل الدخول بنجاح",
+  "googleSignInCancelled": "تم إلغاء تسجيل الدخول باستخدام Google"
 }

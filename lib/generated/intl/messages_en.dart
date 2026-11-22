@@ -103,6 +103,9 @@ class MessageLookup extends MessageLookupByLibrary {
     ),
     "forgotPassword": MessageLookupByLibrary.simpleMessage("Forgot Password?"),
     "fullName": MessageLookupByLibrary.simpleMessage("Full Name"),
+    "googleSignInCancelled": MessageLookupByLibrary.simpleMessage(
+      "Google Sign-In was cancelled",
+    ),
     "iAgreeTo": MessageLookupByLibrary.simpleMessage("I agree to the"),
     "invalidEmail": MessageLookupByLibrary.simpleMessage(
       "The email address is invalid",
@@ -110,6 +113,9 @@ class MessageLookup extends MessageLookupByLibrary {
     "login": MessageLookupByLibrary.simpleMessage("Log In"),
     "loginSubtitle": MessageLookupByLibrary.simpleMessage(
       "Sign in to keep track of your expenses",
+    ),
+    "loginSuccessfully": MessageLookupByLibrary.simpleMessage(
+      "Logged in successfully",
     ),
     "mustAcceptTerms": MessageLookupByLibrary.simpleMessage(
       "You must accept the terms and privacy policy to continue",
