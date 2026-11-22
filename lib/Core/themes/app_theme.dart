@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil_plus/flutter_screenutil_plus.dart';
 import 'package:hesba/Core/themes/app_colors.dart';
 import 'package:hesba/Core/themes/app_fonts.dart';
-import 'package:hesba/Core/themes/app_reduis.dart';
+import 'package:hesba/Core/themes/app_dimensions.dart';
 import 'package:hesba/Core/themes/app_text_styles.dart';
 
 class AppTheme {
@@ -94,12 +94,15 @@ class AppTheme {
         style: TextButton.styleFrom(
           backgroundColor: appColors.primary,
           foregroundColor: appColors.buttonText,
-          textStyle: AppTextStyles.link,
+          textStyle: AppTextStyles.button,
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(AppRadius.button),
+          ),
         ),
       ),
       dividerTheme: DividerThemeData(
         color: appColors.border,
-        thickness: AppBorderWidth.thin,
+        thickness: AppBorderWidth.focused,
       ),
 
       checkboxTheme: CheckboxThemeData(

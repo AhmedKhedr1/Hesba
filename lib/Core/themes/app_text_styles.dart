@@ -1,5 +1,5 @@
 import 'package:flutter/painting.dart';
-import 'package:hesba/Core/themes/app_reduis.dart';
+import 'package:hesba/Core/themes/app_dimensions.dart';
 
 class AppTextStyles {
   AppTextStyles._();
@@ -76,11 +76,6 @@ class AppTextStyles {
   // ----------------------------------------------------------
 
   /// الجمل التوضيحية تحت العناوين (لونها غالباً textSecondary)
-  static TextStyle get subtitle => TextStyle(
-    fontSize: AppFontSize.bodyLarge,
-    fontWeight: AppFontWeight.regular,
-    height: 1.5,
-  );
 
   static TextStyle get bodyLarge => TextStyle(
     fontSize: AppFontSize.bodyLarge,
@@ -144,6 +139,11 @@ class AppTextStyles {
     fontWeight: AppFontWeight.regular,
     height: 1.4,
   );
+ static TextStyle get small => TextStyle(
+  fontSize: AppFontSize.small,
+  fontWeight: AppFontWeight.regular,
+  height: 1.4,
+);
 
   // ----------------------------------------------------------
   // الأزرار والروابط

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "560897284482",
+    "project_id": "hesba-ec829",
+    "storage_bucket": "hesba-ec829.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:560897284482:android:433179648e8af933ff979b",
+        "android_client_info": {
+          "package_name": "com.example.hesba"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDMmlI7EOLbuPNZ5JS0DI1C9Tsz4c0CaUU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

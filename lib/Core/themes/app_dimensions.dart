@@ -46,7 +46,7 @@ class AppPadding {
 
   // الحقول والأزرار
   static EdgeInsets get field =>
-      EdgeInsets.symmetric(horizontal: 16.w, vertical: 16.h);
+      EdgeInsets.symmetric(horizontal: 10.w, vertical: 12.h);
   static EdgeInsets get button =>
       EdgeInsets.symmetric(horizontal: 24.w, vertical: 14.h);
 
@@ -148,7 +148,7 @@ class AppFontSize {
   static double get display => 48.sp; // رقم المبلغ في شاشة الإضافة
 
   // محددة
-  static double get button => 16.sp;
+  static double get button => 18.sp;
   static double get buttonSecondary => 15.sp;
   static double get navLabel => 12.sp;
   static double get input => 15.sp;
@@ -247,24 +247,3 @@ class AppLoaderSize {
   static double get large => 48.w;
   static const double strokeWidth = 2.5;
 }
-
-// import 'package:flutter_screenutil_plus/flutter_screenutil_plus.dart';
-
-// class AppRadius {
-//   AppRadius._();
-//   static double get field => 14.r;
-//   static double get button => 16.r;
-//   static double get card => 16.r;
-// }
-
-// class AppBorderWidth {
-//   AppBorderWidth._();
-
-//   static const double normal = 1;
-//   static const double focused = 1.5;
-// }
-
-// class AppSizes {
-//   AppSizes._();
-//   static double get buttonHeight => 56.h;
-// }

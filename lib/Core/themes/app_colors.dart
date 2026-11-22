@@ -37,7 +37,7 @@ class AppColors extends ThemeExtension<AppColors> {
     card: Color(0xFFFFFFFF),
     textPrimary: Color(0xFF16213A),
     textSecondary: Color(0xFF6B7085),
-    border: Color(0xFFEDE7D9),
+    border: Color(0xFFE4E2DD),
     errorBorder: Color(0xFFC8553D),
     successBorder: Color(0xFF2F8F6B),
     primary: Color(0xFFB8860B),
@@ -52,7 +52,7 @@ class AppColors extends ThemeExtension<AppColors> {
     card: Color(0xFF171F33),
     textPrimary: Color(0xFFF4EFE2),
     textSecondary: Color(0xFF98A0B8),
-    border: Color(0xFF252E47),
+    border: Color(0xFF232D42),
     errorBorder: Color(0xFFF0826A),
     successBorder: Color(0xFF4FC59A),
     primary: Color(0xFFE3B341),
@@ -113,6 +113,3 @@ class AppColors extends ThemeExtension<AppColors> {
   }
 }
 
-extension AppColorsX on BuildContext {
-  AppColors get colors => Theme.of(this).extension<AppColors>()!;
-}
