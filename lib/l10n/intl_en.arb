@@ -32,6 +32,40 @@
 "termsAndConditions": "Terms",
 "and": "and",
 "privacyPolicy": "Privacy Policy",
-"mustAcceptTerms": "You must accept the terms and privacy policy to continue"
+"mustAcceptTerms": "You must accept the terms and privacy policy to continue",
+  "termsAcceptanceTitle": "Acceptance of Terms",
+  "termsAcceptanceDescription": "By accessing or using the Hesba application, you expressly acknowledge and agree unconditionally to comply with all the terms of this agreement and its associated Privacy Policy.",
+  "appUsageTitle": "Application Usage",
+  "appUsageDescription": "The application is available for personal, non-commercial use to manage and track daily expenses. It is prohibited to use it for any unlawful activities or attempt to disrupt its servers or systems.",
+  "accountResponsibilityTitle": "Account and Responsibility",
+  "accountResponsibilityDescription": "The user is fully responsible for maintaining the confidentiality of their login credentials and password, as well as all activities and transactions performed through their account.",
+  "dataAccuracyTitle": "Data Accuracy",
+  "dataAccuracyDescription": "The user acknowledges that all financial information and expenses entered are their direct responsibility. The application provides reports based on the information supplied without providing binding financial advice.",
+  "accountDeletionTitle": "Account Deletion and Suspension",
+  "accountDeletionDescription": "The user has the right to request account closure and deletion of all saved financial data at any time through the application settings. The application management also reserves the right to suspend any account that violates these terms.",
+   "dataCollectionTitle": "Data Collection",
+  "dataCollectionDescription": "Hesba collects the data necessary to provide its services and improve the user experience.",
 
+  "dataUsageTitle": "Data Usage",
+  "dataUsageDescription": "We use data to provide expense management and tracking services and improve application performance.",
+
+  "dataProtectionTitle": "Data Protection",
+  "dataProtectionDescription": "We take appropriate measures to protect users' data against unauthorized access or use.",
+
+  "dataSharingTitle": "Data Sharing",
+  "dataSharingDescription": "Users' data is not shared with third parties except when necessary to provide the service or comply with legal requirements.",
+
+  "userRightsTitle": "User Rights",
+  "userRightsDescription": "Users have the right to access, modify, or request deletion of their data according to the options available in the application.",
+
+  "policyUpdatesTitle": "Privacy Policy Updates",
+  "policyUpdatesDescription": "The Privacy Policy may be updated from time to time, and the latest update date will be displayed in the application.",
+    "weakPassword": "The password is too weak",
+  "emailAlreadyInUse": "This email address is already in use",
+  "invalidEmail": "The email address is invalid",
+  "unknownError": "An unexpected error occurred. Please try again",
+    "networkRequestFailed": "Network request failed. Please check your internet connection and try again.",
+     "userNotFound": "No user found for this email address",
+  "wrongPassword": "The password is incorrect",
+  "accountCreatedSuccessfully": "Account created successfully"
 }

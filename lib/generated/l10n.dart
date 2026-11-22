@@ -359,6 +359,306 @@ class S {
       args: [],
     );
   }
+
+  /// `Acceptance of Terms`
+  String get termsAcceptanceTitle {
+    return Intl.message(
+      'Acceptance of Terms',
+      name: 'termsAcceptanceTitle',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `By accessing or using the Hesba application, you expressly acknowledge and agree unconditionally to comply with all the terms of this agreement and its associated Privacy Policy.`
+  String get termsAcceptanceDescription {
+    return Intl.message(
+      'By accessing or using the Hesba application, you expressly acknowledge and agree unconditionally to comply with all the terms of this agreement and its associated Privacy Policy.',
+      name: 'termsAcceptanceDescription',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Application Usage`
+  String get appUsageTitle {
+    return Intl.message(
+      'Application Usage',
+      name: 'appUsageTitle',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `The application is available for personal, non-commercial use to manage and track daily expenses. It is prohibited to use it for any unlawful activities or attempt to disrupt its servers or systems.`
+  String get appUsageDescription {
+    return Intl.message(
+      'The application is available for personal, non-commercial use to manage and track daily expenses. It is prohibited to use it for any unlawful activities or attempt to disrupt its servers or systems.',
+      name: 'appUsageDescription',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Account and Responsibility`
+  String get accountResponsibilityTitle {
+    return Intl.message(
+      'Account and Responsibility',
+      name: 'accountResponsibilityTitle',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `The user is fully responsible for maintaining the confidentiality of their login credentials and password, as well as all activities and transactions performed through their account.`
+  String get accountResponsibilityDescription {
+    return Intl.message(
+      'The user is fully responsible for maintaining the confidentiality of their login credentials and password, as well as all activities and transactions performed through their account.',
+      name: 'accountResponsibilityDescription',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Data Accuracy`
+  String get dataAccuracyTitle {
+    return Intl.message(
+      'Data Accuracy',
+      name: 'dataAccuracyTitle',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `The user acknowledges that all financial information and expenses entered are their direct responsibility. The application provides reports based on the information supplied without providing binding financial advice.`
+  String get dataAccuracyDescription {
+    return Intl.message(
+      'The user acknowledges that all financial information and expenses entered are their direct responsibility. The application provides reports based on the information supplied without providing binding financial advice.',
+      name: 'dataAccuracyDescription',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Account Deletion and Suspension`
+  String get accountDeletionTitle {
+    return Intl.message(
+      'Account Deletion and Suspension',
+      name: 'accountDeletionTitle',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `The user has the right to request account closure and deletion of all saved financial data at any time through the application settings. The application management also reserves the right to suspend any account that violates these terms.`
+  String get accountDeletionDescription {
+    return Intl.message(
+      'The user has the right to request account closure and deletion of all saved financial data at any time through the application settings. The application management also reserves the right to suspend any account that violates these terms.',
+      name: 'accountDeletionDescription',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Data Collection`
+  String get dataCollectionTitle {
+    return Intl.message(
+      'Data Collection',
+      name: 'dataCollectionTitle',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Hesba collects the data necessary to provide its services and improve the user experience.`
+  String get dataCollectionDescription {
+    return Intl.message(
+      'Hesba collects the data necessary to provide its services and improve the user experience.',
+      name: 'dataCollectionDescription',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Data Usage`
+  String get dataUsageTitle {
+    return Intl.message(
+      'Data Usage',
+      name: 'dataUsageTitle',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `We use data to provide expense management and tracking services and improve application performance.`
+  String get dataUsageDescription {
+    return Intl.message(
+      'We use data to provide expense management and tracking services and improve application performance.',
+      name: 'dataUsageDescription',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Data Protection`
+  String get dataProtectionTitle {
+    return Intl.message(
+      'Data Protection',
+      name: 'dataProtectionTitle',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `We take appropriate measures to protect users' data against unauthorized access or use.`
+  String get dataProtectionDescription {
+    return Intl.message(
+      'We take appropriate measures to protect users\' data against unauthorized access or use.',
+      name: 'dataProtectionDescription',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Data Sharing`
+  String get dataSharingTitle {
+    return Intl.message(
+      'Data Sharing',
+      name: 'dataSharingTitle',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Users' data is not shared with third parties except when necessary to provide the service or comply with legal requirements.`
+  String get dataSharingDescription {
+    return Intl.message(
+      'Users\' data is not shared with third parties except when necessary to provide the service or comply with legal requirements.',
+      name: 'dataSharingDescription',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `User Rights`
+  String get userRightsTitle {
+    return Intl.message(
+      'User Rights',
+      name: 'userRightsTitle',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Users have the right to access, modify, or request deletion of their data according to the options available in the application.`
+  String get userRightsDescription {
+    return Intl.message(
+      'Users have the right to access, modify, or request deletion of their data according to the options available in the application.',
+      name: 'userRightsDescription',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Privacy Policy Updates`
+  String get policyUpdatesTitle {
+    return Intl.message(
+      'Privacy Policy Updates',
+      name: 'policyUpdatesTitle',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `The Privacy Policy may be updated from time to time, and the latest update date will be displayed in the application.`
+  String get policyUpdatesDescription {
+    return Intl.message(
+      'The Privacy Policy may be updated from time to time, and the latest update date will be displayed in the application.',
+      name: 'policyUpdatesDescription',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `The password is too weak`
+  String get weakPassword {
+    return Intl.message(
+      'The password is too weak',
+      name: 'weakPassword',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `This email address is already in use`
+  String get emailAlreadyInUse {
+    return Intl.message(
+      'This email address is already in use',
+      name: 'emailAlreadyInUse',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `The email address is invalid`
+  String get invalidEmail {
+    return Intl.message(
+      'The email address is invalid',
+      name: 'invalidEmail',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `An unexpected error occurred. Please try again`
+  String get unknownError {
+    return Intl.message(
+      'An unexpected error occurred. Please try again',
+      name: 'unknownError',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Network request failed. Please check your internet connection and try again.`
+  String get networkRequestFailed {
+    return Intl.message(
+      'Network request failed. Please check your internet connection and try again.',
+      name: 'networkRequestFailed',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `No user found for this email address`
+  String get userNotFound {
+    return Intl.message(
+      'No user found for this email address',
+      name: 'userNotFound',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `The password is incorrect`
+  String get wrongPassword {
+    return Intl.message(
+      'The password is incorrect',
+      name: 'wrongPassword',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Account created successfully`
+  String get accountCreatedSuccessfully {
+    return Intl.message(
+      'Account created successfully',
+      name: 'accountCreatedSuccessfully',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

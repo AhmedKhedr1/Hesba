@@ -1,11 +1,15 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 import 'package:hesba/Core/constants/app_assets.dart';
 import 'package:hesba/Core/extensions/localization_extension.dart';
 import 'package:hesba/Core/extensions/theme_extension.dart';
+import 'package:hesba/Core/helpers/snack_bar_helper.dart';
 import 'package:hesba/Core/routes/app_routes.dart';
 import 'package:hesba/Core/themes/app_dimensions.dart';
 import 'package:hesba/Core/utils/validators.dart';
+import 'package:hesba/features/Auth/presentation/providers/sign_up_notifier.dart';
+import 'package:hesba/features/Auth/presentation/providers/sign_up_state.dart';
 import 'package:hesba/features/Auth/presentation/views/widgets/LabeledTextFormField.dart';
 import 'package:hesba/features/Auth/presentation/views/widgets/auth_header.dart';
 import 'package:hesba/features/Auth/presentation/views/widgets/auth_text_button.dart';
@@ -14,14 +18,14 @@ import 'package:hesba/features/Auth/presentation/views/widgets/have_and_not_have
 import 'package:hesba/features/Auth/presentation/views/widgets/or_divider.dart';
 import 'package:hesba/features/Auth/presentation/views/widgets/terms_checkbox.dart';
 
-class SignUpViewBody extends StatefulWidget {
-  const new({super.key});
+class SignUpViewBody extends ConsumerStatefulWidget {
+  const SignUpViewBody({super.key});
 
   @override
-  State<SignUpViewBody> createState() => _SignUpViewBodyState();
+  ConsumerState<SignUpViewBody> createState() => _SignUpViewBodyState();
 }
 
-class _SignUpViewBodyState extends State<SignUpViewBody> {
+class _SignUpViewBodyState extends ConsumerState<SignUpViewBody> {
   AutovalidateMode autovalidateMode = AutovalidateMode.disabled;
   late String fullName, email, password;
   final GlobalKey<FormState> formkey = GlobalKey<FormState>();
@@ -35,6 +39,9 @@ class _SignUpViewBodyState extends State<SignUpViewBody> {
   void _submit() {
     if (formkey.currentState!.validate()) {
       formkey.currentState!.save();
+      ref
+          .read(signUpProvider.notifier)
+          .signUp(name: fullName, email: email, password: password);
     } else {
       setState(() => autovalidateMode = AutovalidateMode.always);
     }
@@ -42,6 +49,21 @@ class _SignUpViewBodyState extends State<SignUpViewBody> {
 
   @override
   Widget build(BuildContext context) {
+    ref.listen<SignUpState>(signUpProvider, (previous, next) {
+      if (!mounted) return;
+      switch (next) {
+        case SignUpFailure(:final errMessage):
+          SnackBarHelper.show(context, errMessage);
+        case SignUpSuccess():
+          SnackBarHelper.show(context, context.l10n.accountCreatedSuccessfully);
+          GoRouter.of(context).go(AppRoutes.login);
+        case SignUpInitial():
+        case SignUpLoading():
+          break;
+      }
+    });
+    final isLoading = ref.watch(signUpProvider) is SignUpLoading;
+
     return SafeArea(
       child: Form(
         key: formkey,
@@ -134,6 +156,7 @@ class _SignUpViewBodyState extends State<SignUpViewBody> {
                     onPressed: () {
                       _submit();
                     },
+                    isLoading: isLoading,
                     title: context.l10n.createAccount,
                   ),
                   AppGap.vXs,
