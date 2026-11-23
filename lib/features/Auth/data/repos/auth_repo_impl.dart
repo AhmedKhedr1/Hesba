@@ -62,4 +62,19 @@ class AuthRepoImpl implements AuthRepo {
       return left(ServerFailure(S.current.unknownError));
     }
   }
+
+  @override
+  Stream<UserEntity?> authStateChanges() => _service.authStateChanges().map(
+    (user) => user == null ? null : UserModel.fromFirebaseUser(user),
+  );
+
+@override
+Future<Either<Failure, Unit>> signOut() async {
+  try {
+    await _service.signOut();
+    return right(unit);
+  } catch (_) {
+    return left(ServerFailure(S.current.unknownError));
+  }
+}
 }

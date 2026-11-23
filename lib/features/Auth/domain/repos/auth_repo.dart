@@ -14,4 +14,7 @@ abstract class AuthRepo {
     required String password,
   });
   Future<Either<Failure, UserEntity>> signInWithGoogle();
+
+  Stream<UserEntity?> authStateChanges();
+  Future<Either<Failure, Unit>> signOut();
 }

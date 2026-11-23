@@ -79,4 +79,11 @@ class FirebaseAuthService {
       throw CustomException(message: (e.code));
     }
   }
+
+  Stream<User?> authStateChanges() => _auth.authStateChanges();
+  
+  Future<void> signOut() async {
+  await _auth.signOut();
+  await GoogleSignIn.instance.signOut();
+}
 }
