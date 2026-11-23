@@ -13,6 +13,7 @@ class Hesba extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final themeMode = ref.watch(themeModeProvider);
+    final router = ref.watch(routerProvider);
     return ScreenUtilPlusInit(
       designSize: Size(360, 690),
       minTextAdapt: true,
@@ -33,7 +34,7 @@ class Hesba extends ConsumerWidget {
           themeMode: themeMode,
           theme: AppTheme.light,
           darkTheme: AppTheme.dark,
-          routerConfig: AppRouter.router,
+          routerConfig: router,
         );
       },
     );
