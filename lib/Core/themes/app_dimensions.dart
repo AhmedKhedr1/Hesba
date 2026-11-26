@@ -53,8 +53,8 @@ class AppPadding {
   // الكروت والعناصر
   static EdgeInsets get card => EdgeInsets.all(16.w);
   static EdgeInsets get summaryCard => EdgeInsets.all(20.w);
-  static EdgeInsets get transactionTile =>
-      EdgeInsets.symmetric(horizontal: 12.w, vertical: 12.h);
+  static EdgeInsets get appBar =>
+      EdgeInsets.symmetric(horizontal: 16.w, vertical: 12.h);
   static EdgeInsets get categoryTile =>
       EdgeInsets.symmetric(horizontal: 12.w, vertical: 12.h);
   static EdgeInsets get chip =>

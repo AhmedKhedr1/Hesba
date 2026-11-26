@@ -69,5 +69,20 @@
   "wrongPassword": "The password is incorrect",
   "accountCreatedSuccessfully": "Account created successfully",
   "loginSuccessfully": "Logged in successfully",
-  "googleSignInCancelled": "Google Sign-In was cancelled"
+  "googleSignInCancelled": "Google Sign-In was cancelled",
+  "welcome": "Welcome",
+    "categories": "Categories",
+  "seeAll": "See All",
+  "latestTransactions": "Latest Transactions",
+    "food": "Food",
+  "transportation": "Transportation",
+  "bills": "Bills",
+  "salary": "Salary",
+  "remainingBalance": "Remaining balance",
+"totalIncome": "Total income",
+"totalExpenses": "Expenses",
+"spentPercentOfIncome": "You spent {percent}% of your income",
+"remainingPercent": "Remaining {percent}%",
+  "updatedJustNow": "Updated Just Now"
+
 }

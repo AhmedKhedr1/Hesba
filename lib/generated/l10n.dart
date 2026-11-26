@@ -679,6 +679,111 @@ class S {
       args: [],
     );
   }
+
+  /// `Welcome`
+  String get welcome {
+    return Intl.message('Welcome', name: 'welcome', desc: '', args: []);
+  }
+
+  /// `Categories`
+  String get categories {
+    return Intl.message('Categories', name: 'categories', desc: '', args: []);
+  }
+
+  /// `See All`
+  String get seeAll {
+    return Intl.message('See All', name: 'seeAll', desc: '', args: []);
+  }
+
+  /// `Latest Transactions`
+  String get latestTransactions {
+    return Intl.message(
+      'Latest Transactions',
+      name: 'latestTransactions',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Food`
+  String get food {
+    return Intl.message('Food', name: 'food', desc: '', args: []);
+  }
+
+  /// `Transportation`
+  String get transportation {
+    return Intl.message(
+      'Transportation',
+      name: 'transportation',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Bills`
+  String get bills {
+    return Intl.message('Bills', name: 'bills', desc: '', args: []);
+  }
+
+  /// `Salary`
+  String get salary {
+    return Intl.message('Salary', name: 'salary', desc: '', args: []);
+  }
+
+  /// `Remaining balance`
+  String get remainingBalance {
+    return Intl.message(
+      'Remaining balance',
+      name: 'remainingBalance',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Total income`
+  String get totalIncome {
+    return Intl.message(
+      'Total income',
+      name: 'totalIncome',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Expenses`
+  String get totalExpenses {
+    return Intl.message('Expenses', name: 'totalExpenses', desc: '', args: []);
+  }
+
+  /// `You spent {percent}% of your income`
+  String spentPercentOfIncome(Object percent) {
+    return Intl.message(
+      'You spent $percent% of your income',
+      name: 'spentPercentOfIncome',
+      desc: '',
+      args: [percent],
+    );
+  }
+
+  /// `Remaining {percent}%`
+  String remainingPercent(Object percent) {
+    return Intl.message(
+      'Remaining $percent%',
+      name: 'remainingPercent',
+      desc: '',
+      args: [percent],
+    );
+  }
+
+  /// `Updated Just Now`
+  String get updatedJustNow {
+    return Intl.message(
+      'Updated Just Now',
+      name: 'updatedJustNow',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

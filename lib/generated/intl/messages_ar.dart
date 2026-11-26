@@ -20,6 +20,10 @@ typedef String MessageIfAbsent(String messageStr, List<dynamic> args);
 class MessageLookup extends MessageLookupByLibrary {
   String get localeName => 'ar';
 
+  static String m0(percent) => "المتبقي ${percent}%";
+
+  static String m1(percent) => "صرفت ${percent}% من دخلك";
+
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
     "Or": MessageLookupByLibrary.simpleMessage("أو"),
@@ -49,6 +53,8 @@ class MessageLookup extends MessageLookupByLibrary {
       "يُتاح التطبيق للاستخدام الشخصي غير التجاري لإدارة وتتبع النفقات اليومية، ويحظر استخدامه في أي أنشطة غير مشروعة أو محاولة تعطيل خوادمه وأنظمته.",
     ),
     "appUsageTitle": MessageLookupByLibrary.simpleMessage("استخدام التطبيق"),
+    "bills": MessageLookupByLibrary.simpleMessage("فواتير"),
+    "categories": MessageLookupByLibrary.simpleMessage("الفئات"),
     "confirmPassword": MessageLookupByLibrary.simpleMessage(
       "تأكيد كلمة المرور",
     ),
@@ -95,6 +101,7 @@ class MessageLookup extends MessageLookupByLibrary {
     ),
     "enterEmail": MessageLookupByLibrary.simpleMessage("أدخل بريدك الإلكتروني"),
     "enterFullName": MessageLookupByLibrary.simpleMessage("أدخل اسمك الكامل"),
+    "food": MessageLookupByLibrary.simpleMessage("أكل"),
     "forgotPassword": MessageLookupByLibrary.simpleMessage(
       "نسيت كلمة المرور ؟",
     ),
@@ -106,6 +113,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "invalidEmail": MessageLookupByLibrary.simpleMessage(
       "البريد الإلكتروني غير صحيح",
     ),
+    "latestTransactions": MessageLookupByLibrary.simpleMessage("آخر العمليات"),
     "login": MessageLookupByLibrary.simpleMessage("تسجيل الدخول"),
     "loginSubtitle": MessageLookupByLibrary.simpleMessage(
       "سجّل دخولك لمتابعة مصاريفك",
@@ -144,9 +152,14 @@ class MessageLookup extends MessageLookupByLibrary {
       "تحديثات سياسة الخصوصية",
     ),
     "privacyPolicy": MessageLookupByLibrary.simpleMessage("سياسة الخصوصية"),
+    "remainingBalance": MessageLookupByLibrary.simpleMessage("الرصيد المتبقي"),
+    "remainingPercent": m0,
+    "salary": MessageLookupByLibrary.simpleMessage("مرتب"),
+    "seeAll": MessageLookupByLibrary.simpleMessage("عرض الكل"),
     "signupSubtitle": MessageLookupByLibrary.simpleMessage(
       "وابدأ بتسجيل مصاريفك في دقيقة",
     ),
+    "spentPercentOfIncome": m1,
     "startTrackingExpenses": MessageLookupByLibrary.simpleMessage(
       "ابدأ بتسجيل مصاريفك في دقيقة واحدة",
     ),
@@ -157,9 +170,13 @@ class MessageLookup extends MessageLookupByLibrary {
     "termsAndConditions": MessageLookupByLibrary.simpleMessage(
       "الشروط والأحكام",
     ),
+    "totalExpenses": MessageLookupByLibrary.simpleMessage("المصروفات"),
+    "totalIncome": MessageLookupByLibrary.simpleMessage("إجمالي الدخل"),
+    "transportation": MessageLookupByLibrary.simpleMessage("مواصلات"),
     "unknownError": MessageLookupByLibrary.simpleMessage(
       "حدث خطأ غير متوقع، يرجى المحاولة مرة أخرى",
     ),
+    "updatedJustNow": MessageLookupByLibrary.simpleMessage("مُحدَّث الآن"),
     "userNotFound": MessageLookupByLibrary.simpleMessage(
       "لا يوجد حساب مسجل بهذا البريد الإلكتروني",
     ),
@@ -170,6 +187,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "weakPassword": MessageLookupByLibrary.simpleMessage(
       "كلمة المرور ضعيفة جدًا",
     ),
+    "welcome": MessageLookupByLibrary.simpleMessage("أهلاً بك"),
     "welcomeBack": MessageLookupByLibrary.simpleMessage("أهلاً بعودتك"),
     "wrongPassword": MessageLookupByLibrary.simpleMessage(
       "كلمة المرور غير صحيحة",

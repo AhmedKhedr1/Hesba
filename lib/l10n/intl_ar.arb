@@ -69,5 +69,20 @@
   "wrongPassword": "كلمة المرور غير صحيحة",
   "accountCreatedSuccessfully": "تم إنشاء الحساب بنجاح",
   "loginSuccessfully": "تم تسجيل الدخول بنجاح",
-  "googleSignInCancelled": "تم إلغاء تسجيل الدخول باستخدام Google"
+  "googleSignInCancelled": "تم إلغاء تسجيل الدخول باستخدام Google",
+  "welcome": "أهلاً بك",
+    "categories": "الفئات",
+  "seeAll": "عرض الكل",
+  "latestTransactions": "آخر العمليات",
+    "food": "أكل",
+  "transportation": "مواصلات",
+  "bills": "فواتير",
+  "salary": "مرتب",
+  "remainingBalance": "الرصيد المتبقي",
+"totalIncome": "إجمالي الدخل",
+"totalExpenses": "المصروفات",
+"spentPercentOfIncome": "صرفت {percent}% من دخلك",
+"remainingPercent": "المتبقي {percent}%",
+  "updatedJustNow": "مُحدَّث الآن"
+
 }

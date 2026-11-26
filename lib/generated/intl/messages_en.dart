@@ -20,6 +20,10 @@ typedef String MessageIfAbsent(String messageStr, List<dynamic> args);
 class MessageLookup extends MessageLookupByLibrary {
   String get localeName => 'en';
 
+  static String m0(percent) => "Remaining ${percent}%";
+
+  static String m1(percent) => "You spent ${percent}% of your income";
+
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
     "Or": MessageLookupByLibrary.simpleMessage("OR"),
@@ -49,6 +53,8 @@ class MessageLookup extends MessageLookupByLibrary {
       "The application is available for personal, non-commercial use to manage and track daily expenses. It is prohibited to use it for any unlawful activities or attempt to disrupt its servers or systems.",
     ),
     "appUsageTitle": MessageLookupByLibrary.simpleMessage("Application Usage"),
+    "bills": MessageLookupByLibrary.simpleMessage("Bills"),
+    "categories": MessageLookupByLibrary.simpleMessage("Categories"),
     "confirmPassword": MessageLookupByLibrary.simpleMessage("Confirm Password"),
     "confirmPasswordRequired": MessageLookupByLibrary.simpleMessage(
       "Please confirm your password",
@@ -101,6 +107,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "enterFullName": MessageLookupByLibrary.simpleMessage(
       "Enter your full name",
     ),
+    "food": MessageLookupByLibrary.simpleMessage("Food"),
     "forgotPassword": MessageLookupByLibrary.simpleMessage("Forgot Password?"),
     "fullName": MessageLookupByLibrary.simpleMessage("Full Name"),
     "googleSignInCancelled": MessageLookupByLibrary.simpleMessage(
@@ -109,6 +116,9 @@ class MessageLookup extends MessageLookupByLibrary {
     "iAgreeTo": MessageLookupByLibrary.simpleMessage("I agree to the"),
     "invalidEmail": MessageLookupByLibrary.simpleMessage(
       "The email address is invalid",
+    ),
+    "latestTransactions": MessageLookupByLibrary.simpleMessage(
+      "Latest Transactions",
     ),
     "login": MessageLookupByLibrary.simpleMessage("Log In"),
     "loginSubtitle": MessageLookupByLibrary.simpleMessage(
@@ -150,9 +160,16 @@ class MessageLookup extends MessageLookupByLibrary {
       "Privacy Policy Updates",
     ),
     "privacyPolicy": MessageLookupByLibrary.simpleMessage("Privacy Policy"),
+    "remainingBalance": MessageLookupByLibrary.simpleMessage(
+      "Remaining balance",
+    ),
+    "remainingPercent": m0,
+    "salary": MessageLookupByLibrary.simpleMessage("Salary"),
+    "seeAll": MessageLookupByLibrary.simpleMessage("See All"),
     "signupSubtitle": MessageLookupByLibrary.simpleMessage(
       "Start tracking your expenses in just one minute",
     ),
+    "spentPercentOfIncome": m1,
     "startTrackingExpenses": MessageLookupByLibrary.simpleMessage(
       "Start tracking your expenses in just one minute",
     ),
@@ -163,9 +180,13 @@ class MessageLookup extends MessageLookupByLibrary {
       "Acceptance of Terms",
     ),
     "termsAndConditions": MessageLookupByLibrary.simpleMessage("Terms"),
+    "totalExpenses": MessageLookupByLibrary.simpleMessage("Expenses"),
+    "totalIncome": MessageLookupByLibrary.simpleMessage("Total income"),
+    "transportation": MessageLookupByLibrary.simpleMessage("Transportation"),
     "unknownError": MessageLookupByLibrary.simpleMessage(
       "An unexpected error occurred. Please try again",
     ),
+    "updatedJustNow": MessageLookupByLibrary.simpleMessage("Updated Just Now"),
     "userNotFound": MessageLookupByLibrary.simpleMessage(
       "No user found for this email address",
     ),
@@ -176,6 +197,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "weakPassword": MessageLookupByLibrary.simpleMessage(
       "The password is too weak",
     ),
+    "welcome": MessageLookupByLibrary.simpleMessage("Welcome"),
     "welcomeBack": MessageLookupByLibrary.simpleMessage("Welcome Back"),
     "wrongPassword": MessageLookupByLibrary.simpleMessage(
       "The password is incorrect",
