@@ -8,7 +8,7 @@ import 'package:hesba/features/Auth/presentation/views/login_view.dart';
 import 'package:hesba/features/Auth/presentation/views/privacy_policy_view.dart';
 import 'package:hesba/features/Auth/presentation/views/sign_up_view.dart';
 import 'package:hesba/features/Auth/presentation/views/terms_and_conditions_view.dart';
-import 'package:hesba/features/home/home_view.dart';
+import 'package:hesba/features/home/presentation/views/home_view.dart';
 
 const Set<String> _loggedOutOnlyRoutes = {AppRoutes.login, AppRoutes.signup};
 

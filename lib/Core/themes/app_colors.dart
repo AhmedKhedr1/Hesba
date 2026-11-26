@@ -17,6 +17,14 @@ class AppColors extends ThemeExtension<AppColors> {
     required this.primarySoft,
     required this.income,
     required this.expense,
+    required this.summaryCardBackground,
+    required this.summaryCardBorder,
+    required this.summaryStatsBackground,
+    required this.onSummaryCard,
+    required this.onSummaryCardMuted,
+    required this.summaryAccent,
+    required this.summaryIncome,
+    required this.summaryExpense,
   });
 
   final Color background;
@@ -31,6 +39,14 @@ class AppColors extends ThemeExtension<AppColors> {
   final Color primarySoft;
   final Color income;
   final Color expense;
+  final Color summaryCardBackground;
+  final Color summaryCardBorder;
+  final Color onSummaryCardMuted;
+  final Color summaryAccent;
+  final Color summaryIncome;
+  final Color summaryExpense;
+  final Color summaryStatsBackground;
+  final Color onSummaryCard;
 
   static const light = AppColors(
     background: Color(0xFFFBF9F4),
@@ -45,6 +61,14 @@ class AppColors extends ThemeExtension<AppColors> {
     primarySoft: Color(0xFFF6ECD2),
     income: Color(0xFF2F8F6B),
     expense: Color(0xFFC8553D),
+    summaryCardBackground: Color(0xFF16213A),
+    summaryCardBorder: Color(0x1FFFFFFF),
+    onSummaryCardMuted: Color(0xFFA9B0C6),
+    summaryAccent: Color(0xFFE3B341),
+    summaryIncome: Color(0xFF4FC59A),
+    summaryExpense: Color(0xFFF0826A),
+    summaryStatsBackground: Color(0x14FFFFFF),
+    onSummaryCard: Color(0xFFF4EFE2),
   );
 
   static const dark = AppColors(
@@ -60,6 +84,14 @@ class AppColors extends ThemeExtension<AppColors> {
     primarySoft: Color(0xFF2B2618),
     income: Color(0xFF4FC59A),
     expense: Color(0xFFF0826A),
+    summaryCardBackground: Color(0xFF171F33),
+    summaryCardBorder: Color(0x99E3B341),
+    onSummaryCardMuted: Color(0xFF98A0B8),
+    summaryAccent: Color(0xFFE3B341),
+    summaryIncome: Color(0xFF4FC59A),
+    summaryExpense: Color(0xFFF0826A),
+    summaryStatsBackground: Color(0x4D000000),
+    onSummaryCard: Color(0xFFF4EFE2),
   );
 
   @override
@@ -76,6 +108,14 @@ class AppColors extends ThemeExtension<AppColors> {
     Color? primarySoft,
     Color? income,
     Color? expense,
+    Color? summaryCardBackground,
+    Color? summaryCardBorder,
+    Color? onSummaryCardMuted,
+    Color? summaryAccent,
+    Color? summaryIncome,
+    Color? summaryExpense,
+    Color? summaryStatsBackground,
+    Color? onSummaryCard,
   }) {
     return AppColors(
       background: background ?? this.background,
@@ -90,6 +130,16 @@ class AppColors extends ThemeExtension<AppColors> {
       primarySoft: primarySoft ?? this.primarySoft,
       income: income ?? this.income,
       expense: expense ?? this.expense,
+      summaryCardBackground:
+          summaryCardBackground ?? this.summaryCardBackground,
+      summaryCardBorder: summaryCardBorder ?? this.summaryCardBorder,
+      onSummaryCardMuted: onSummaryCardMuted ?? this.onSummaryCardMuted,
+      summaryAccent: summaryAccent ?? this.summaryAccent,
+      summaryIncome: summaryIncome ?? this.summaryIncome,
+      summaryExpense: summaryExpense ?? this.summaryExpense,
+      summaryStatsBackground:
+          summaryStatsBackground ?? this.summaryStatsBackground,
+      onSummaryCard: onSummaryCard ?? this.onSummaryCard,
     );
   }
 
@@ -109,7 +159,30 @@ class AppColors extends ThemeExtension<AppColors> {
       primarySoft: Color.lerp(primarySoft, other.primarySoft, t)!,
       income: Color.lerp(income, other.income, t)!,
       expense: Color.lerp(expense, other.expense, t)!,
+      summaryCardBackground: Color.lerp(
+        summaryCardBackground,
+        other.summaryCardBackground,
+        t,
+      )!,
+      summaryCardBorder: Color.lerp(
+        summaryCardBorder,
+        other.summaryCardBorder,
+        t,
+      )!,
+      onSummaryCardMuted: Color.lerp(
+        onSummaryCardMuted,
+        other.onSummaryCardMuted,
+        t,
+      )!,
+      summaryStatsBackground: Color.lerp(
+        summaryStatsBackground,
+        other.summaryStatsBackground,
+        t,
+      )!,
+      onSummaryCard: Color.lerp(onSummaryCard, other.onSummaryCard, t)!,
+      summaryAccent: Color.lerp(summaryAccent, other.summaryAccent, t)!,
+      summaryIncome: Color.lerp(summaryIncome, other.summaryIncome, t)!,
+      summaryExpense: Color.lerp(summaryExpense, other.summaryExpense, t)!,
     );
   }
 }
-
